@@ -1,0 +1,62 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Repostaje">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.cetys.repostator.Repostaje"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Guardar"
+            android:id="@+id/botonGuardar"
+            />
+        <DatePicker
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:id="@+id/fecha"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp"
+            android:id="@+id/kilometros"
+            android:hint = "Kilómetros"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp"
+            android:id="@+id/litros"
+            android:hint = "Litros"
+            android:imeOptions="actionNext"
+            android:inputType="numberDecimal"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp"
+            android:id="@+id/precio"
+            android:hint = "Precio por litro"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal"
+            />
+    </LinearLayout>
+
+</FrameLayout>
