@@ -4,14 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.xp.repostator.MainActivity"
-    tools:showIn="@layout/activity_main">
+    tools:context="com.example.xp.repostator.Entrada_Datos">
 
-    <ListView
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/marcoLista">
-    </ListView>
-
+        android:id="@+id/marcoInicial">
+</FrameLayout>
 </android.support.constraint.ConstraintLayout>
